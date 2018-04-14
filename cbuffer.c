@@ -20,8 +20,7 @@
 #  define MAP_ANONYMOUS MAP_ANON
 #endif
 
-static void __create_buffer_mirror(cbuf_t* cb)
-{
+static void __create_buffer_mirror(cbuf_t *cb) {
     char path[] = "/tmp/cb-XXXXXX";
     int fd, status;
     void *address;
@@ -59,8 +58,7 @@ static void __create_buffer_mirror(cbuf_t* cb)
         fail();
 }
 
-cbuf_t *cbuf_new(const unsigned int order)
-{
+cbuf_t *cbuf_new(const unsigned int order) {
     cbuf_t *me = malloc(sizeof(cbuf_t));
     me->size = 1UL << order;
     me->head = me->tail = 0;
@@ -68,19 +66,16 @@ cbuf_t *cbuf_new(const unsigned int order)
     return me;
 }
 
-void cbuf_free(cbuf_t *me)
-{
+void cbuf_free(cbuf_t *me) {
     munmap(me->data, me->size << 1);
     free(me);
 }
 
-int cbuf_is_empty(const cbuf_t *me)
-{
+int cbuf_is_empty(const cbuf_t *me) {
     return me->head == me->tail;
 }
 
-int cbuf_offer(cbuf_t *me, const unsigned char *data, const int size)
-{
+int cbuf_offer(cbuf_t *me, const char *data, const int size) {
     /* prevent buffer from getting completely full or over commited */
     if (cbuf_unusedspace(me) <= size)
         return 0;
@@ -94,38 +89,47 @@ int cbuf_offer(cbuf_t *me, const unsigned char *data, const int size)
     return written;
 }
 
-unsigned char *cbuf_peek(const cbuf_t *me)
-{
+char *cbuf_peek(const cbuf_t *me) {
     if (cbuf_is_empty(me))
         return NULL;
 
     return me->data + me->head;
 }
 
-unsigned char *cbuf_poll(cbuf_t *me, const unsigned int size)
-{
+char *cbuf_poll(cbuf_t *me, const unsigned int size) {
     if (cbuf_is_empty(me))
         return NULL;
 
     void *end = me->data + me->head;
     me->head += size;
-    return end;
+    const unsigned int len = strlen(end) > size ? size : strlen(end);
+    void *desc = malloc(len);
+    memcpy(desc, end, len);
+    return desc;
 }
 
-int cbuf_size(const cbuf_t *me)
-{
+int cbuf_size(const cbuf_t *me) {
     return me->size;
 }
 
-int cbuf_usedspace(const cbuf_t *me)
-{
+int cbuf_usedspace(const cbuf_t *me) {
     if (me->head <= me->tail)
         return me->tail - me->head;
     else
         return me->size - (me->head - me->tail);
 }
 
-int cbuf_unusedspace(const cbuf_t *me)
-{
+int cbuf_unusedspace(const cbuf_t *me) {
     return me->size - cbuf_usedspace(me);
+}
+
+const char *cbuf_serialize(const cbuf_t *me) {
+    return me->data;
+}
+
+cbuf_t *cbuf_deserialize(const char *buffer) {
+
+    cbuf_t *p = cbuf_new(16);
+    cbuf_offer(p, buffer, strlen(buffer));
+    return p;
 }

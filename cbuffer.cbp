@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cbuffer"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cbuffer">
+				<Option output="/Users/ryuu/git/cbuffer/libcbuffer.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 cbuffer"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cbuffer/fast">
+				<Option output="/Users/ryuu/git/cbuffer/libcbuffer.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 cbuffer/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run">
+				<Option output="/Users/ryuu/git/cbuffer/run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 run"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run/fast">
+				<Option output="/Users/ryuu/git/cbuffer/run" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ryuu/git/cbuffer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 run/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ryuu/git/cbuffer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ryuu/git/cbuffer/cbuffer.c">
+			<Option target="cbuffer"/>
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/ryuu/git/cbuffer/cbuffer.h">
+			<Option target="cbuffer"/>
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/ryuu/git/cbuffer/main.c">
+			<Option target="run"/>
+		</Unit>
+		<Unit filename="/Users/ryuu/git/cbuffer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

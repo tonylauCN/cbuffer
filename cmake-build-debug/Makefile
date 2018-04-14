@@ -54,7 +54,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /Users/ryuu/git/cbuffer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ryuu/git/cbuffer
+CMAKE_BINARY_DIR = /Users/ryuu/git/cbuffer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,9 +83,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryuu/git/cbuffer/CMakeFiles /Users/ryuu/git/cbuffer/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles /Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryuu/git/cbuffer/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -114,19 +114,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cbuffer
-
-# Build rule for target.
-cbuffer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cbuffer
-.PHONY : cbuffer
-
-# fast build rule for target.
-cbuffer/fast:
-	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/build
-.PHONY : cbuffer/fast
-
-#=============================================================================
 # Target rules for targets named run
 
 # Build rule for target.
@@ -145,7 +132,6 @@ cbuffer.o: cbuffer.c.o
 
 # target to build an object file
 cbuffer.c.o:
-	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/cbuffer.c.o
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/cbuffer.c.o
 .PHONY : cbuffer.c.o
 
@@ -155,7 +141,6 @@ cbuffer.i: cbuffer.c.i
 
 # target to preprocess a source file
 cbuffer.c.i:
-	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/cbuffer.c.i
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/cbuffer.c.i
 .PHONY : cbuffer.c.i
 
@@ -165,7 +150,6 @@ cbuffer.s: cbuffer.c.s
 
 # target to generate assembly for a file
 cbuffer.c.s:
-	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/cbuffer.c.s
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/cbuffer.c.s
 .PHONY : cbuffer.c.s
 
@@ -204,7 +188,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... cbuffer"
 	@echo "... run"
 	@echo "... cbuffer.o"
 	@echo "... cbuffer.i"

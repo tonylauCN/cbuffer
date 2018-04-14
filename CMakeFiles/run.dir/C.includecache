@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ryuu/git/cbuffer/cbuffer.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+assert.h
+-
+sys/mman.h
+-
+unistd.h
+-
+cbuffer.h
+/Users/ryuu/git/cbuffer/cbuffer.h
+
+/Users/ryuu/git/cbuffer/cbuffer.h
+
+/Users/ryuu/git/cbuffer/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+cbuffer.h
+/Users/ryuu/git/cbuffer/cbuffer.h
+
