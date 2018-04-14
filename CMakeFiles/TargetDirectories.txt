@@ -1,4 +1,0 @@
-/Users/ryuu/git/cbuffer/CMakeFiles/rebuild_cache.dir
-/Users/ryuu/git/cbuffer/CMakeFiles/edit_cache.dir
-/Users/ryuu/git/cbuffer/CMakeFiles/cbuffer.dir
-/Users/ryuu/git/cbuffer/CMakeFiles/run.dir

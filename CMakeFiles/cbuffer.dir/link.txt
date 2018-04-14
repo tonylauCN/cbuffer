@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99 -Wall -Werror -Wunused-variable -g -dynamiclib -Wl,-headerpad_max_install_names  -o libcbuffer.dylib -install_name @rpath/libcbuffer.dylib CMakeFiles/cbuffer.dir/cbuffer.c.o 

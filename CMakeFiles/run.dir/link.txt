@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/cc  -std=gnu99 -Wall -Werror -Wunused-variable -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/run.dir/cbuffer.c.o CMakeFiles/run.dir/main.c.o  -o run 
