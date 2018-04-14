@@ -198,6 +198,9 @@ Project_SOURCE_DIR:STATIC=/Users/ryuu/git/cbuffer
 //Value Computed by CMake
 cbuffer_BINARY_DIR:STATIC=/Users/ryuu/git/cbuffer/cmake-build-debug
 
+//Dependencies for target
+cbuffer_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 cbuffer_SOURCE_DIR:STATIC=/Users/ryuu/git/cbuffer
 

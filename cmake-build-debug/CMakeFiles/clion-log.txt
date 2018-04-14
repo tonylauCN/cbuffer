@@ -1,4 +1,4 @@
 "/Users/ryuu/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.4203.505/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ryuu/git/cbuffer
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/ryuu/git/cbuffer
+-- Build files have been written to: /Users/ryuu/git/cbuffer/cmake-build-debug

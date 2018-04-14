@@ -63,13 +63,50 @@ CMAKE_SOURCE_DIR = /Users/ryuu/git/cbuffer
 CMAKE_BINARY_DIR = /Users/ryuu/git/cbuffer/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/cbuffer.dir
+
+# All Build rule for target.
+CMakeFiles/cbuffer.dir/all:
+	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/depend
+	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target cbuffer"
+.PHONY : CMakeFiles/cbuffer.dir/all
+
+# Include target in all.
+all: CMakeFiles/cbuffer.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cbuffer.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cbuffer.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/cbuffer.dir/rule
+
+# Convenience name for target.
+cbuffer: CMakeFiles/cbuffer.dir/rule
+
+.PHONY : cbuffer
+
+# clean rule for target.
+CMakeFiles/cbuffer.dir/clean:
+	$(MAKE) -f CMakeFiles/cbuffer.dir/build.make CMakeFiles/cbuffer.dir/clean
+.PHONY : CMakeFiles/cbuffer.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cbuffer.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
 CMakeFiles/run.dir/all:
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ryuu/git/cbuffer/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target run"
 .PHONY : CMakeFiles/run.dir/all
 
 # Include target in all.
